@@ -1,4 +1,4 @@
-/*Christine M Jordan 5.24.2020 CIS 184 LAB 6*/
+/*Christine M Jordan 5.29.2020 CIS 184 PHASE 3*/
 html {
 	background-image: url("../images/moonphases.jpg");
 	background-repeat: no-repeat;
@@ -8,7 +8,7 @@ html {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 body {
-	width: 800px;
+	width: 960px;
 	background-color: transparent;
 	margin: 0 auto;
 	padding: 0;
@@ -26,11 +26,12 @@ header {
 	background: linear-gradient(83deg, rgba(14,4,3,1) 0%, rgba(102,0,4,1) 100%);
 	padding: 35px;
 	font-style: oblique
-} 
-header img { 
-	float: left; 
-	padding-right: 15px;  
-} 
+}
+	header img {
+		float: left;
+		padding-right: 15px;
+		width: 65px;
+	} 
 header h2 {
 	font-size: 230%;
 }
@@ -42,7 +43,14 @@ header h3 {
 /* Navigation menu */
 #nav_menu {
 	clear: left;
+	margin-left: 15%;
+	margin-right: 15%;
+	background-color: gainsboro;
+	opacity:0.25;
+	border:dotted;
+	font-weight:900;
 }
+
 #nav_menu ul {
 	list-style: none;
 	position: relative;
@@ -76,8 +84,8 @@ header h3 {
 	width: 160px;
 	padding: .7em 0;
 	text-decoration: none;
-	background-color: black;
-	color: white;
+	
+	color: darkred;
 }
 #nav_menu ul li a.current {
 	color: indianred;
@@ -92,15 +100,15 @@ aside {
 	width: 160px;
 	padding: 20px 0; 
 }
-#nav_list ul { 
+#nav_list_left ul { 
 	list-style: none;
 	padding-left: 1.5em;
 }
-#nav_list ul li { 
+#nav_list_left ul li { 
 	width: 110px;
 	margin-bottom: .5em;
 	border: 2px solid black; }
-	#nav_list ul li a {
+	#nav_list_left ul li a {
 		display: block;
 		font-weight: bold;
 		text-decoration: none;
@@ -108,6 +116,43 @@ aside {
 		padding: .5em 0 .5em .5em;
 		color: #cfe8cf;
 	}
+.rightaside {
+	float: right;
+	width: 160px;
+	padding: 20px 0;
+}
+#nav_list_right ul {
+	list-style: none;
+	padding-left: 0.5em;
+	border: 2px dotted plum;
+}
+	#nav_list_right ul li {
+		width: auto;
+		margin-bottom: .5em;
+		margin-right: .5em;
+		margin-top:.5em;
+		border: 2px dotted red;
+	}
+
+	#nav_list_right ul li a {
+		display: block;
+		font-weight: bold;
+		text-decoration: none;
+		background-color: transparent;
+		padding: .5em 0 .5em .5em;
+		color: lavender;
+	}
+
+.rightasideimg{
+	width:130px;
+	height:196px;
+	margin-left:15px;
+}
+.historyrightasideimg {
+	width: 134px;
+	height: 148px;
+	margin-left: 15px;
+}
 
 /* Section */
 section {
@@ -164,4 +209,21 @@ footer p {
 .arcanatable tr:nth-child(even){
 	background-color:lightcyan;
 	color: black;
+}
+.tablewidth{
+	width: 100%;
+}
+table, th, td {
+	border: 1px solid ghostwhite;
+	color: ghostwhite;
+}
+.removebullet{
+	list-style:none;
+}
+.bulletdetail{
+	list-style:disc;
+	color:lightyellow;
+}
+.date{
+	color:lightyellow;
 }
